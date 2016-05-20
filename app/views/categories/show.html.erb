@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @category.category_name %></h1>
+
+
+
+<%= link_to 'Edit', edit_category_path(@category) %>
+<%= link_to 'destroy', @category, method: :delete, data: {confirm: 'Are you sure'} %>
+<%= link_to 'Back', categories_path %>
